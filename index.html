@@ -1,181 +1,133 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Checkmait Privacy Policy</title>
-<style>
-  :root {
-    --ink: #111827;
-    --muted: #4b5563;
-    --rule: #e5e7eb;
-    --link: #1d4ed8;
-    --bg: #ffffff;
-  }
-  * { box-sizing: border-box; }
-  html, body { margin: 0; padding: 0; background: var(--bg); color: var(--ink); }
-  body {
-    font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    max-width: 760px;
-    margin: 0 auto;
-    padding: 32px 20px 64px;
-  }
-  h1 { font-size: 28px; margin: 0 0 4px; }
-  h2 { font-size: 20px; margin: 32px 0 8px; padding-top: 16px; border-top: 1px solid var(--rule); }
-  h3 { font-size: 16px; margin: 20px 0 6px; color: var(--ink); }
-  p, li { color: var(--ink); }
-  .meta { color: var(--muted); font-size: 14px; margin: 0 0 24px; }
-  a { color: var(--link); }
-  ul { padding-left: 22px; }
-  li { margin: 4px 0; }
-  table { border-collapse: collapse; width: 100%; margin: 12px 0 16px; font-size: 14px; }
-  th, td { border: 1px solid var(--rule); padding: 8px 10px; text-align: left; vertical-align: top; }
-  th { background: #f9fafb; }
-  code { background: #f3f4f6; padding: 1px 5px; border-radius: 3px; font-size: 14px; }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkmait - Privacy Policy</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #09090B;
+      color: #FAFAFA;
+      line-height: 1.7;
+      padding: 40px 20px;
+    }
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+    h1 {
+      font-size: 28px;
+      margin-bottom: 8px;
+    }
+    .effective-date {
+      color: #A1A1AA;
+      font-size: 14px;
+      margin-bottom: 40px;
+    }
+    h2 {
+      font-size: 20px;
+      margin-top: 32px;
+      margin-bottom: 12px;
+      color: #E4E4E7;
+    }
+    p, li {
+      color: #D4D4D8;
+      margin-bottom: 12px;
+    }
+    ul {
+      padding-left: 24px;
+      margin-bottom: 16px;
+    }
+    a {
+      color: #818CF8;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .footer {
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid #27272A;
+      color: #71717A;
+      font-size: 13px;
+    }
+  </style>
 </head>
 <body>
+  <div class="container">
+    <h1>Checkmait Privacy Policy</h1>
+    <p class="effective-date">Effective Date: March 26, 2026</p>
 
-<h1>Checkmait Privacy Policy</h1>
-<p class="meta">Effective date: May 7, 2026 &middot; Last updated: May 7, 2026</p>
+    <p>Checkmait ("we", "our", "us") is an AI-powered aviation training application. This privacy policy explains how we collect, use, and protect your information when you use the Checkmait mobile application.</p>
 
-<p>This Privacy Policy explains what information Checkmait ("Checkmait," "we," "us," or "our") collects when you use the Checkmait mobile application (the "App"), how we use that information, who we share it with, and the choices you have. Checkmait is an AI-assisted training tool for student and certificated pilots that simulates a Designated Pilot Examiner ("DPE") oral exam.</p>
+    <h2>1. Information We Collect</h2>
 
-<h2>1. Information We Collect</h2>
+    <h3 style="font-size:16px; margin-top:16px; margin-bottom:8px; color:#E4E4E7;">Account Information</h3>
+    <p>When you create an account, we collect your email address and authentication credentials through our authentication provider, Clerk. We do not store your password directly.</p>
 
-<h3>1.1 Account information</h3>
-<p>When you sign up or sign in, our authentication provider (Clerk) collects and stores your email address and, depending on the sign-in method you choose, your name and a profile image. Clerk also assigns you a unique user identifier.</p>
+    <h3 style="font-size:16px; margin-top:16px; margin-bottom:8px; color:#E4E4E7;">Voice Data</h3>
+    <p>Checkmait uses your device microphone to capture voice input during training sessions. Your audio is transmitted to OpenAI's Whisper service for speech-to-text transcription. Voice recordings are processed in real time and are <strong>not permanently stored</strong> on our servers. Audio files are temporarily created during a session for playback purposes and are automatically deleted shortly after use.</p>
 
-<h3>1.2 Voice and audio recordings</h3>
-<p>When you start a practice session and speak into your device's microphone, the App captures your spoken audio for the duration of that session. The audio is captured solely so it can be transcribed and used to generate the AI examiner's response.</p>
+    <h3 style="font-size:16px; margin-top:16px; margin-bottom:8px; color:#E4E4E7;">Session Data</h3>
+    <p>We store your session transcripts, performance scores, and training progress to provide session history, debrief reports, and progress tracking features. This data is associated with your user account.</p>
 
-<h3>1.3 Session content</h3>
-<p>The choices you make to start a practice session (e.g., the checkride task, aircraft type, airport identifier, weather conditions) are sent to our backend so it can construct the correct AI prompt. Saved session transcripts are stored on your device by default.</p>
+    <h3 style="font-size:16px; margin-top:16px; margin-bottom:8px; color:#E4E4E7;">Payment Information</h3>
+    <p>Payment processing is handled entirely by Stripe. We <strong>never</strong> collect, store, or have access to your credit card number, CVV, or full payment card details. Stripe provides us only with a transaction confirmation and subscription status.</p>
 
-<h3>1.4 Diagnostic and crash information</h3>
-<p>If the App crashes or encounters a runtime error, our crash-reporting provider (Sentry) collects a crash report that includes device model, operating-system version, App version, and a stack trace. The crash report is associated with your Clerk user identifier so we can debug issues affecting specific accounts.</p>
+    <h2>2. How We Use Your Information</h2>
+    <ul>
+      <li>To provide AI-powered checkride oral exam simulation</li>
+      <li>To transcribe your voice input and generate AI examiner responses</li>
+      <li>To track your training progress, weak areas, and session history</li>
+      <li>To manage your account and subscription</li>
+      <li>To improve the quality and accuracy of our training content</li>
+    </ul>
 
-<h3>1.5 Subscription and billing information</h3>
-<p>Checkmait does not currently offer paid subscriptions in the App. When subscriptions are introduced in a future version, purchases made on iOS will use Apple's In-App Purchase system, and Apple will be the merchant of record. If subscriptions are also offered through our website, our billing provider (Stripe) will collect and process payment information for those purchases. Checkmait does not store full payment-card data on its own servers.</p>
+    <h2>3. Third-Party Services</h2>
+    <p>We use the following third-party services to operate Checkmait. We have confirmed that each provider offers data protection equivalent to the protections described in this policy, and we only share the minimum data necessary for each service to function.</p>
+    <ul>
+      <li><strong>OpenAI</strong> — Speech-to-text transcription (Whisper), AI conversation (GPT-4o), and text-to-speech synthesis. Voice audio and conversation text are sent to OpenAI for processing. Under OpenAI's API terms, your audio and conversation data are <strong>not used to train OpenAI's models</strong> and are retained only briefly for abuse monitoring before deletion. See <a href="https://openai.com/policies/privacy-policy" target="_blank">OpenAI's Privacy Policy</a> and <a href="https://openai.com/policies/api-data-usage-policies" target="_blank">OpenAI's API Data Usage Policies</a>.</li>
+      <li><strong>Clerk</strong> — User authentication and account management. Only your email address and authentication tokens are shared. See <a href="https://clerk.com/privacy" target="_blank">Clerk's Privacy Policy</a>.</li>
+      <li><strong>Stripe</strong> — Subscription billing and payment processing (web only — not used inside the iOS app). Payment card details are entered on Stripe-hosted pages; we never receive or store them. See <a href="https://stripe.com/privacy" target="_blank">Stripe's Privacy Policy</a>.</li>
+    </ul>
 
-<h3>1.6 Information we do <em>not</em> collect</h3>
-<ul>
-  <li>Your phone number, postal address, contacts, photos, or calendar.</li>
-  <li>Your real-time location.</li>
-  <li>Health or biometric data.</li>
-  <li>Advertising or marketing identifiers.</li>
-  <li>Data collected for tracking across other apps or websites.</li>
-</ul>
+    <h2>3a. Your Consent Before Data Is Shared</h2>
+    <p>Before any voice audio or session content is sent to OpenAI, the app shows an in-app disclosure naming OpenAI, listing exactly what data is sent and what is not sent, and requiring you to explicitly tap "I Agree and Continue." If you decline, the AI features are disabled and no data is sent. You can revoke this consent at any time under <strong>Settings → Privacy → AI Services</strong>; revoking immediately turns off the AI features.</p>
 
-<h2>2. How We Collect Information</h2>
-<p>Account information is collected by Clerk during sign-up and sign-in flows shown inside the App. Audio is collected only while you are inside an active practice session and only after you have granted iOS microphone permission and accepted the in-App AI disclosure described in Section 5; the microphone is not active in the background or outside an active session. Session content is collected from your selections on practice-setup screens. Crash and diagnostic information is collected automatically by Sentry when an error occurs.</p>
+    <h2>4. Data Sharing</h2>
+    <p>We do <strong>not</strong> sell, rent, or share your personal information with third parties for marketing purposes. Your data is only shared with the third-party services listed above as necessary to operate the application.</p>
 
-<h2>3. How We Use the Information</h2>
-<ul>
-  <li>To create and authenticate your account.</li>
-  <li>To transcribe your spoken audio and generate the AI examiner's responses in real time.</li>
-  <li>To display session transcripts and progress to you on your device.</li>
-  <li>To diagnose and fix crashes, bugs, and performance issues.</li>
-  <li>To provide customer support if you contact us.</li>
-  <li>If you purchase a subscription, to provision and manage your entitlement and to comply with tax and accounting obligations.</li>
-</ul>
-<p>We do not use your information for advertising, profiling, or sale to third parties. We do not build behavioral profiles. We do not analyze your audio for any purpose other than producing the AI training response that you requested.</p>
+    <h2>5. Data Retention</h2>
+    <p>Session data and training progress are retained as long as your account is active. Voice recordings are ephemeral and not permanently stored. You may request deletion of your account and associated data at any time by contacting us.</p>
 
-<h2>4. Third-Party Services and Sharing</h2>
-<p>To operate the App we share the categories of data described below with the following third-party service providers. We have reviewed each provider's privacy and security commitments and confirm that they provide protections that are equivalent to those described in this Policy.</p>
+    <h2>6. Data Security</h2>
+    <p>We use industry-standard security measures to protect your data, including encrypted data transmission (HTTPS/TLS), secure token-based authentication, and access controls on our infrastructure.</p>
 
-<table>
-  <thead>
-    <tr>
-      <th>Provider</th>
-      <th>What we share</th>
-      <th>Purpose</th>
-      <th>Provider policy</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>OpenAI, L.L.C.</strong></td>
-      <td>Practice-session audio and the session-context prompt.</td>
-      <td>AI transcription (Whisper), chat responses (GPT-4o), and text-to-speech (gpt-4o-mini-tts) that power the DPE oral-exam practice feature. Under OpenAI's API terms, this data is <strong>not used to train OpenAI's models</strong> and is retained only briefly for abuse monitoring.</td>
-      <td><a href="https://openai.com/policies/privacy-policy">openai.com/policies/privacy-policy</a></td>
-    </tr>
-    <tr>
-      <td><strong>Clerk Inc.</strong></td>
-      <td>Email address, name (if provided), profile image (if provided), and authentication events.</td>
-      <td>User account creation, sign-in, and session management.</td>
-      <td><a href="https://clerk.com/legal/privacy">clerk.com/legal/privacy</a></td>
-    </tr>
-    <tr>
-      <td><strong>Functional Software, Inc. (Sentry)</strong></td>
-      <td>Crash reports including device model, OS version, App version, stack trace, and your Clerk user identifier.</td>
-      <td>Diagnose and fix crashes and runtime errors.</td>
-      <td><a href="https://sentry.io/privacy/">sentry.io/privacy</a></td>
-    </tr>
-    <tr>
-      <td><strong>Railway Corporation</strong></td>
-      <td>Encrypted in-transit traffic between the App and our backend.</td>
-      <td>Hosts the Checkmait backend that mediates calls to OpenAI and stores account-related records in our SQLite database.</td>
-      <td><a href="https://railway.app/legal/privacy">railway.app/legal/privacy</a></td>
-    </tr>
-    <tr>
-      <td><strong>Stripe, Inc.</strong> (when subscriptions launch)</td>
-      <td>Billing email, payment method, billing country, and subscription status.</td>
-      <td>Process payments and manage subscriptions for purchases made outside the App.</td>
-      <td><a href="https://stripe.com/privacy">stripe.com/privacy</a></td>
-    </tr>
-    <tr>
-      <td><strong>Apple Inc.</strong> (when subscriptions launch)</td>
-      <td>Subscription status only (purchase token verification).</td>
-      <td>In-App Purchase processing for any subscription bought on iOS. Apple is the merchant of record for those transactions.</td>
-      <td><a href="https://www.apple.com/legal/privacy/">apple.com/legal/privacy</a></td>
-    </tr>
-  </tbody>
-</table>
+    <h2>7. Children's Privacy</h2>
+    <p>Checkmait is not directed at children under 13. We do not knowingly collect personal information from children under 13. If you believe a child under 13 has provided us with personal information, please contact us and we will promptly delete it.</p>
 
-<p>We also fetch live aviation data from public sources (aviationweather.gov for METAR/TAF reports, the FAA's d-TPP for chart metadata). These requests are made by our backend and do not include any personal information about you.</p>
+    <h2>8. Your Rights</h2>
+    <p>You have the right to:</p>
+    <ul>
+      <li>Access the personal data we hold about you</li>
+      <li>Request correction of inaccurate data</li>
+      <li>Request deletion of your account and data</li>
+      <li>Withdraw consent for data processing</li>
+    </ul>
 
-<p>We do not sell, rent, or lease your information. We do not share information with advertisers or data brokers. We may disclose information if we are required to do so by law, valid legal process, or to protect the rights, safety, or property of Checkmait or its users.</p>
+    <h2>9. Changes to This Policy</h2>
+    <p>We may update this privacy policy from time to time. We will notify you of material changes through the app or via email. Continued use of Checkmait after changes constitutes acceptance of the updated policy.</p>
 
-<h2>5. AI Disclosure and Consent</h2>
-<p>Before any audio leaves your device, the App displays an AI-disclosure-and-consent screen that names OpenAI as the AI provider, explains that microphone audio recorded during practice sessions and the session-context prompt will be sent to OpenAI for processing, states that this data is not used to train OpenAI's models, links to this Privacy Policy, and requires your explicit "I Agree and Continue" tap before proceeding.</p>
-<p>You may revoke your consent at any time inside the App at <strong>Settings &rarr; Privacy &rarr; AI Services</strong>. Revoking consent disables AI-dependent features but leaves the rest of the App usable. Independently, iOS will request microphone permission the first time the App tries to access your microphone, and you can revoke that permission at any time in iOS Settings.</p>
+    <h2>10. Contact Us</h2>
+    <p>If you have questions about this privacy policy or your data, contact us at:</p>
+    <p><a href="mailto:london@checkmait.app">london@checkmait.app</a></p>
 
-<h2>6. Data Retention</h2>
-<ul>
-  <li><strong>Account information:</strong> retained by Clerk for as long as your account exists. When you delete your account, the associated record is deleted by Clerk and removed from our database.</li>
-  <li><strong>Audio:</strong> not stored on our servers. Audio is streamed to OpenAI for processing and is retained by OpenAI only for the limited abuse-monitoring period described in their API data-usage policies, after which they delete it.</li>
-  <li><strong>Session transcripts:</strong> stored locally on your device until you delete them or uninstall the App.</li>
-  <li><strong>Crash reports:</strong> retained by Sentry for up to 90 days, then deleted.</li>
-  <li><strong>Subscription records (when applicable):</strong> retained for as long as the subscription is active and for the period required by tax and accounting law thereafter.</li>
-</ul>
-
-<h2>7. Security</h2>
-<p>All data sent from the App is transmitted over HTTPS using industry-standard transport encryption (TLS 1.2 or later). Account credentials are managed by Clerk under their security program. Our backend is hosted on Railway and access is restricted to authorized personnel. No method of electronic transmission or storage is completely secure, but we use commercially reasonable safeguards to protect your information.</p>
-
-<h2>8. Children's Privacy</h2>
-<p>Checkmait is intended for users who are at least 13 years old and pursuing or holding a pilot certificate. We do not knowingly collect personal information from children under 13. If you believe a child under 13 has used the App and provided information, please contact us and we will delete the information promptly.</p>
-
-<h2>9. Your Rights and Choices</h2>
-<p>Depending on where you live, you may have the right to access, correct, or delete the personal information we hold about you, to object to or restrict certain processing, or to data portability. You can exercise these rights at any time by:</p>
-<ul>
-  <li>Editing your profile in the App.</li>
-  <li>Revoking AI-services consent in <strong>Settings &rarr; Privacy &rarr; AI Services</strong>.</li>
-  <li>Revoking iOS microphone permission in iOS Settings.</li>
-  <li>Deleting saved transcripts from within the App.</li>
-  <li>Deleting your account from <strong>Settings &rarr; Account &rarr; Delete Account</strong>, which removes your record from Clerk and our backend.</li>
-  <li>Uninstalling the App, which removes all locally stored data from the device.</li>
-  <li>Contacting us with any privacy request, including a request that we ask OpenAI, Sentry, Clerk, or Stripe to delete data they hold about you.</li>
-</ul>
-
-<h2>10. International Users</h2>
-<p>Checkmait is operated from the United States. If you use the App from another country, the information you provide will be transmitted to and processed in the United States, where data-protection laws may differ from those in your jurisdiction. By using the App and granting consent on the disclosure screen, you consent to this transfer.</p>
-
-<h2>11. Changes to This Policy</h2>
-<p>We may update this Privacy Policy from time to time. When we do, we will revise the "Last updated" date above and, for material changes, we will display an updated consent screen inside the App so you can review and accept the changes before continuing to use the AI features.</p>
-
-<h2>12. Contact Us</h2>
-<p>If you have any questions about this Privacy Policy, our data practices, or your rights, please contact us at <a href="mailto:londonmoren@gmail.com">londonmoren@gmail.com</a>. We will respond to privacy inquiries within 30 days.</p>
-
+    <div class="footer">
+      <p>&copy; 2026 Checkmait. All rights reserved.</p>
+    </div>
+  </div>
 </body>
 </html>
