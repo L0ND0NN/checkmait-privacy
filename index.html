@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Checkmait - Privacy Policy</title>
+  <title>PocketDPE - Privacy Policy</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
@@ -58,75 +58,93 @@
 </head>
 <body>
   <div class="container">
-    <h1>Checkmait Privacy Policy</h1>
-    <p class="effective-date">Effective Date: March 26, 2026</p>
+    <h1>PocketDPE Privacy Policy</h1>
+    <p class="effective-date">Effective Date: September 6, 2026 &middot; Replaces the policy dated March 26, 2026</p>
 
-    <p>Checkmait ("we", "our", "us") is an AI-powered aviation training application. This privacy policy explains how we collect, use, and protect your information when you use the Checkmait mobile application.</p>
+    <p>PocketDPE ("we", "our", "us") is an AI-powered aviation training application that simulates the oral portion of an FAA checkride. This policy explains what information the PocketDPE iOS app and its servers collect, exactly which companies receive it, how long we keep it, and how to delete it.</p>
 
     <h2>1. Information We Collect</h2>
 
     <h3 style="font-size:16px; margin-top:16px; margin-bottom:8px; color:#E4E4E7;">Account Information</h3>
-    <p>When you create an account, we collect your email address and authentication credentials through our authentication provider, Clerk. We do not store your password directly.</p>
+    <p>When you create an account we collect your email address and sign-in credentials through our authentication provider, Clerk. If you use Sign in with Apple, we receive the identifier Apple provides and, if you choose to share it, your email address. We never see or store your password.</p>
 
     <h3 style="font-size:16px; margin-top:16px; margin-bottom:8px; color:#E4E4E7;">Voice Data</h3>
-    <p>Checkmait uses your device microphone to capture voice input during training sessions. Your audio is transmitted to OpenAI's Whisper service for speech-to-text transcription. Voice recordings are processed in real time and are <strong>not permanently stored</strong> on our servers. Audio files are temporarily created during a session for playback purposes and are automatically deleted shortly after use.</p>
+    <p>During a practice session the app records your spoken answers through the microphone. Each answer is sent to OpenAI's speech-to-text models to be transcribed and to OpenAI's language models to be graded and answered. The audio file itself is deleted from our server as soon as it has been transcribed &mdash; we do not keep recordings. The temporary audio files the app creates on your device are deleted automatically within a day.</p>
 
-    <h3 style="font-size:16px; margin-top:16px; margin-bottom:8px; color:#E4E4E7;">Session Data</h3>
-    <p>We store your session transcripts, performance scores, and training progress to provide session history, debrief reports, and progress tracking features. This data is associated with your user account.</p>
+    <h3 style="font-size:16px; margin-top:16px; margin-bottom:8px; color:#E4E4E7;">Session Transcripts and Progress</h3>
+    <p>We keep the written transcript of each session (the examiner's questions and the text of your answers), your per-area grades, your debrief, and your study progress. This is what powers your session history, the ability to pause and resume a session, your Readiness Score, and syncing your history to a new device. Transcripts and progress are tied to your account.</p>
 
-    <h3 style="font-size:16px; margin-top:16px; margin-bottom:8px; color:#E4E4E7;">Payment Information</h3>
-    <p>Payment processing is handled entirely by Stripe. We <strong>never</strong> collect, store, or have access to your credit card number, CVV, or full payment card details. Stripe provides us only with a transaction confirmation and subscription status.</p>
+    <h3 style="font-size:16px; margin-top:16px; margin-bottom:8px; color:#E4E4E7;">Written Test Report Photo</h3>
+    <p>If you use the written-test scanner, the photo you take of your FAA knowledge test report is sent to OpenAI's vision models to read the knowledge-area codes on it. That photo can include your name and FAA Tracking Number. The photo is deleted from our server immediately after the codes are extracted; only the list of codes is kept, with your account, to tailor your practice sessions. Nothing is scanned until you have seen and accepted an in-app disclosure that says the photo will be sent.</p>
+
+    <h3 style="font-size:16px; margin-top:16px; margin-bottom:8px; color:#E4E4E7;">Subscription Status</h3>
+    <p>Subscriptions inside the iOS app are sold by Apple through In-App Purchase. Apple handles all payment; we never receive your card details. We use RevenueCat to read your subscription status from Apple's receipt so the app knows what you have unlocked. Subscriptions bought on the web are processed by Stripe on Stripe-hosted pages; we receive only a confirmation and status.</p>
+
+    <h3 style="font-size:16px; margin-top:16px; margin-bottom:8px; color:#E4E4E7;">Usage Analytics and Crash Reports</h3>
+    <p>To understand which parts of the app are used and to find bugs, the app sends product-usage events (screens viewed, features used, subscription events) to PostHog, and crash reports to Sentry. These are associated with a random device identifier and, once you sign in, with your account identifier. They never include the content of your practice sessions, your voice, or your test report photo.</p>
 
     <h2>2. How We Use Your Information</h2>
     <ul>
-      <li>To provide AI-powered checkride oral exam simulation</li>
-      <li>To transcribe your voice input and generate AI examiner responses</li>
-      <li>To track your training progress, weak areas, and session history</li>
-      <li>To manage your account and subscription</li>
-      <li>To improve the quality and accuracy of our training content</li>
+      <li>To run the AI examiner: transcribe your answers, grade them, and speak the next question</li>
+      <li>To show your session history, debriefs, Readiness Score and weak areas, and to let you resume a paused session</li>
+      <li>To tailor future practice sessions to the areas your written test report shows you missed</li>
+      <li>To manage your account and know what you have subscribed to</li>
+      <li>To find and fix crashes and to see which features are being used</li>
+      <li>To improve the accuracy of our examiner and question content &mdash; we read sessions in aggregate to find grading errors and repeated questions</li>
     </ul>
 
     <h2>3. Third-Party Services</h2>
-    <p>We use the following third-party services to operate Checkmait. We have confirmed that each provider offers data protection equivalent to the protections described in this policy, and we only share the minimum data necessary for each service to function.</p>
+    <p>These are the only companies that receive your data, and what each one receives. We share the minimum each service needs.</p>
     <ul>
-      <li><strong>OpenAI</strong> — Speech-to-text transcription (Whisper), AI conversation (GPT-4o), and text-to-speech synthesis. Voice audio and conversation text are sent to OpenAI for processing. Under OpenAI's API terms, your audio and conversation data are <strong>not used to train OpenAI's models</strong> and are retained only briefly for abuse monitoring before deletion. See <a href="https://openai.com/policies/privacy-policy" target="_blank">OpenAI's Privacy Policy</a> and <a href="https://openai.com/policies/api-data-usage-policies" target="_blank">OpenAI's API Data Usage Policies</a>.</li>
-      <li><strong>Clerk</strong> — User authentication and account management. Only your email address and authentication tokens are shared. See <a href="https://clerk.com/privacy" target="_blank">Clerk's Privacy Policy</a>.</li>
-      <li><strong>Stripe</strong> — Subscription billing and payment processing (web only — not used inside the iOS app). Payment card details are entered on Stripe-hosted pages; we never receive or store them. See <a href="https://stripe.com/privacy" target="_blank">Stripe's Privacy Policy</a>.</li>
+      <li><strong>OpenAI</strong> &mdash; Your voice recordings (for transcription), the text of your session (for grading and the examiner's replies), and your written-test photo (to read the codes). Under OpenAI's API terms, this data is <strong>not used to train OpenAI's models</strong> and is retained by OpenAI only briefly for abuse monitoring. See <a href="https://openai.com/policies/privacy-policy" target="_blank">OpenAI's Privacy Policy</a> and <a href="https://openai.com/policies/api-data-usage-policies" target="_blank">OpenAI's API Data Usage Policies</a>.</li>
+      <li><strong>Clerk</strong> &mdash; Sign-in and account management. Receives your email address and authentication tokens. See <a href="https://clerk.com/privacy" target="_blank">Clerk's Privacy Policy</a>.</li>
+      <li><strong>Apple</strong> &mdash; All in-app purchases and subscription billing on iOS. See <a href="https://www.apple.com/legal/privacy/" target="_blank">Apple's Privacy Policy</a>.</li>
+      <li><strong>RevenueCat</strong> &mdash; Reads your App Store subscription status so the app can unlock what you bought. Receives your Apple purchase receipt and your account identifier. See <a href="https://www.revenuecat.com/privacy" target="_blank">RevenueCat's Privacy Policy</a>.</li>
+      <li><strong>Stripe</strong> &mdash; Subscription billing for purchases made on the web only; not used inside the iOS app. Card details are entered on Stripe's own pages and never reach us. See <a href="https://stripe.com/privacy" target="_blank">Stripe's Privacy Policy</a>.</li>
+      <li><strong>PostHog</strong> &mdash; Product-usage analytics (which screens and features are used). See <a href="https://posthog.com/privacy" target="_blank">PostHog's Privacy Policy</a>.</li>
+      <li><strong>Sentry</strong> &mdash; Crash and error reports from the app. See <a href="https://sentry.io/privacy/" target="_blank">Sentry's Privacy Policy</a>.</li>
+      <li><strong>Railway</strong> &mdash; Hosts our servers and database in the United States. See <a href="https://railway.com/legal/privacy" target="_blank">Railway's Privacy Policy</a>.</li>
     </ul>
 
-    <h2>3a. Your Consent Before Data Is Shared</h2>
-    <p>Before any voice audio or session content is sent to OpenAI, the app shows an in-app disclosure naming OpenAI, listing exactly what data is sent and what is not sent, and requiring you to explicitly tap "I Agree and Continue." If you decline, the AI features are disabled and no data is sent. You can revoke this consent at any time under <strong>Settings → Privacy → AI Services</strong>; revoking immediately turns off the AI features.</p>
+    <h2>4. Your Consent Before Data Is Shared With OpenAI</h2>
+    <p>Before any voice audio, session content or test-report photo is sent to OpenAI, the app shows a disclosure that names OpenAI, lists exactly what is sent and what is not, and requires you to tap "I Agree and Continue." If you decline, the AI features stay off and nothing is sent. You can withdraw this consent at any time under <strong>Settings &rarr; Privacy &rarr; AI Services</strong>; withdrawing it turns the AI features off immediately.</p>
 
-    <h2>4. Data Sharing</h2>
-    <p>We do <strong>not</strong> sell, rent, or share your personal information with third parties for marketing purposes. Your data is only shared with the third-party services listed above as necessary to operate the application.</p>
+    <h2>5. Data Sharing</h2>
+    <p>We do <strong>not</strong> sell, rent, or share your personal information with anyone for marketing purposes. Your data goes only to the services listed in section 3, only as needed to run the app.</p>
 
-    <h2>5. Data Retention</h2>
-    <p>Session data and training progress are retained as long as your account is active. Voice recordings are ephemeral and not permanently stored. You may request deletion of your account and associated data at any time by contacting us.</p>
+    <h2>6. Data Retention and Deletion</h2>
+    <ul>
+      <li><strong>Voice recordings:</strong> deleted from our server as soon as they are transcribed. Never kept.</li>
+      <li><strong>Test report photos:</strong> deleted from our server as soon as the codes are read. Never kept.</li>
+      <li><strong>Session transcripts and progress:</strong> kept while your account is active so your history and Readiness Score keep working. Working copies of in-progress and recent sessions held on our server for pause-and-resume are automatically deleted 90 days after the session.</li>
+      <li><strong>Account deletion:</strong> use <strong>Settings &rarr; Delete Account</strong> in the app. This permanently deletes your account record, your session transcripts and progress, and your test-report codes from our systems. Deleting your account does not cancel an App Store subscription &mdash; manage that in your iPhone's Settings &rarr; Apple ID &rarr; Subscriptions.</li>
+      <li><strong>Analytics and crash data:</strong> retained by PostHog and Sentry under their own policies; it contains no session content.</li>
+    </ul>
 
-    <h2>6. Data Security</h2>
-    <p>We use industry-standard security measures to protect your data, including encrypted data transmission (HTTPS/TLS), secure token-based authentication, and access controls on our infrastructure.</p>
+    <h2>7. Data Security</h2>
+    <p>All data travels over encrypted connections (HTTPS/TLS). Access to our servers uses token-based authentication, and access to stored data is restricted to what is needed to operate the app.</p>
 
-    <h2>7. Children's Privacy</h2>
-    <p>Checkmait is not directed at children under 13. We do not knowingly collect personal information from children under 13. If you believe a child under 13 has provided us with personal information, please contact us and we will promptly delete it.</p>
+    <h2>8. Children's Privacy</h2>
+    <p>PocketDPE is not directed at children under 13, and we do not knowingly collect personal information from anyone under 13. If you believe a child under 13 has provided us with personal information, contact us and we will delete it promptly.</p>
 
-    <h2>8. Your Rights</h2>
-    <p>You have the right to:</p>
+    <h2>9. Your Rights</h2>
+    <p>Wherever you live, you can:</p>
     <ul>
       <li>Access the personal data we hold about you</li>
-      <li>Request correction of inaccurate data</li>
-      <li>Request deletion of your account and data</li>
-      <li>Withdraw consent for data processing</li>
+      <li>Ask us to correct inaccurate data</li>
+      <li>Delete your account and data yourself, in the app, at any time</li>
+      <li>Withdraw your consent for AI processing, in the app, at any time</li>
     </ul>
+    <p>If you are in the European Economic Area, the United Kingdom or California, you have the additional rights those laws provide, including the right to receive a copy of your data and to complain to your local data-protection authority. Contact us and we will help.</p>
 
-    <h2>9. Changes to This Policy</h2>
-    <p>We may update this privacy policy from time to time. We will notify you of material changes through the app or via email. Continued use of Checkmait after changes constitutes acceptance of the updated policy.</p>
+    <h2>10. Changes to This Policy</h2>
+    <p>We may update this policy from time to time. We will announce material changes in the app or by email. Continued use of PocketDPE after a change means you accept the updated policy.</p>
 
-    <h2>10. Contact Us</h2>
-    <p>If you have questions about this privacy policy or your data, contact us at:</p>
-    <p><a href="mailto:london@checkmait.app">london@checkmait.app</a></p>
+    <h2>11. Contact Us</h2>
+    <p>Questions about this policy or your data: <a href="mailto:support@checkmait.app">support@checkmait.app</a></p>
 
     <div class="footer">
-      <p>&copy; 2026 Checkmait. All rights reserved.</p>
+      <p>&copy; 2026 PocketDPE. All rights reserved.</p>
     </div>
   </div>
 </body>
